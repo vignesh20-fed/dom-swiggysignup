@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<style>
+        section{
+    background-image:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url("image/15.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	background-attachment:fixed;
+	padding:50px 0;
+	}
+	
+	.container{
+	   width:85%;
+	   margin:0 auto;
+
+	}
+    
+	.row{
+	 display:flex;
+	 justify-content:space-between}
+	.input-content{
+	width:50%;
+	}
+    .input-content #function input{
+	width:92%;
+	padding:20px;
+	background:#0000007d;
+
+	}
+	#function input:focus{
+	border-color:white;
+	outline:0;
+	color:white;
+	font-size:15px;
+	}
+	.input-content img{
+	   width:30%;
+	   border-radius:10%;
+	}
+	.content{
+	  display:flex;
+	  justify-content:space-between;
+	  padding:20px;
+	  }
+	 
+	 .content h1{
+	  color:white;
+	  } 
+	  span{
+	  color:red;
+	  font-size:20px;
+	  }
+	
+	.btn{
+	display:inline-block;
+	text-decoration:none;
+	color:white;
+	background-color:orange;
+	padding:12px 25px;
+	text-align:center;
+	width:100%;
+	border:none;
+	font-size:20px;
+	margin-top:40px;
+	}	
+	.image{
+	 width:50%;
+	}
+	.image {
+	 background-image:url("image/10.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	background-attachment:fixed;
+	}
+	.link{
+	 text-decoration:none;
+	 color:red;
+	}
+	#result{
+	font-size:24px;
+	}
+	</style>
+</head>
+<body>
+<section>
+<div class="container">
+<div class="row">
+<div class="input-content">
+<div class="content">
+<h1>Login<br>or <a href="../index.html" class="link">create to your Account</a></h1>
+<img src="image/6.jpg">
+</div>
+
+	
+		<form id="function">
+		<input type="text" placeholder="NAME" id="NAME">
+
+
+		<input type="password" placeholder="PASSWORD" id="PASSWORD">
+
+		
+		<button class="btn">submit</button>
+		<div id="result"></div>
+		
+	</form>
+</div>
+
+
+</div>
+</div>
+</section>
+<script src="main.js"></script>
+</body>
+</html>	

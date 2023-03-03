@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>swiggy</title>
+	<style>
+    section{
+    background-image:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url("image/15.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	background-attachment:fixed;
+	}
+	
+	.container{
+	  width:85%;
+	  margin:0 auto;
+	}
+	
+	.row{
+	  display:flex;
+
+	}
+	
+	.img-content{
+	width:50%;
+	padding:30px;
+	}
+	.img-content img{
+	width:90%;
+	 border-radius:1%;
+	}
+	.input-content{
+	width:50%;
+	}
+    .input-content #function input{
+	width:92%;
+	padding:20px;
+	background:#0000007d;
+	border-color:#ffffff91;
+	color:white;
+	}
+	#function input:focus{
+		border-color:white;
+	outline:0;
+	color:white;
+	font-size:15px;
+	}
+	.input-content img{
+	   width:30%;
+	   border-radius:10%;
+	}
+	.content{
+	  display:flex;
+	  justify-content:space-between;
+	  padding:20px;
+	  }
+	  
+	  .content h1{
+	  color:white;
+	  } 
+	  button{
+	  color:red;
+	  font-size:20px;
+	  border:none;
+	  background:transparent;
+	  }
+	
+	.btn{
+	color:white;
+	background-color:orange;
+	padding:12px 25px;
+	text-align:center;
+	width:100%;
+	border:none;
+	font-size:20px;
+	margin-top:20px;
+	}	
+	.link{
+	 text-decoration:none;
+	 color:red;
+	}
+	#function p{
+	font-size:20px;
+	color:orange;
+	}
+	#result{
+	font-size:24px;
+	}
+	</style>
+	
+</head>
+<body>
+<section>
+<div class="container">
+<div class="row">
+
+<div class="img-content">
+
+ <img src="image/4.jpg">
+
+</div>
+
+<div class="input-content">
+<div class="content">
+<h1>Sign-Up<br>or <a href="login/index.html"  class="link">Login to your Account</a></h1>
+<img src="image/ord.jpg">
+</div>
+
+	<form id="function">
+	    
+		<input type="text" placeholder="NAME" id="NAME">
+
+		<input type="mail" placeholder="EMAIL" id="MAIL">
+
+		<input type="tel" placeholder="PHONENUMBER" id="PHONENUMBER">
+
+		<input type="text" placeholder="USER NAME" id="USER">
+
+		<input type="password" placeholder="PASSWORD" id="PASSWORD">
+
+		<input type="password" placeholder="CONFORM PASSWORD" id="CONFORMPASSWORD">
+		<button class="btn">submit</button>
+		<div id="result"></div>
+		<p>By creating an account, I accept the Terms & Conditions & Privacy Policy</p>
+	</form>
+</div>
+
+</div>
+</div>
+
+</section>
+
+
+<script src="main.js"></script>
+</body>
+</html>	
